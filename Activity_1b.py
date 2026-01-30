@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#This Python File just made the plot for all the different polynomial fits for the data points. 
+
 #Making the N variable to be assigned. Make it 10, 100, 1000
 Number = 10
 
@@ -40,7 +42,7 @@ fig, axs = plt.subplots()
 plt.title('Activity 1 part b. Polynomial fit')
 plt.xlabel('X values')
 plt.ylabel('Y values')
-plt.plot(x_values, y_values + noise, c='k')
+plt.scatter(x_values, y_values + noise, c='k')
 plt.plot(x_graph_values, f1(x_graph_values), c='b')
 plt.plot(x_graph_values, f2(x_graph_values), c='r')
 plt.plot(x_graph_values, f3(x_graph_values), c='g')
@@ -52,7 +54,6 @@ plt.plot(x_graph_values, f7(x_graph_values), c='m')
 plt.plot(x_graph_values, f8(x_graph_values), c='orange')
 plt.plot(x_graph_values, f9(x_graph_values), c='olive')
 plt.legend(['data', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th'])
-
-
+plt.ylim(-2,2)
 plt.grid(True)
 plt.show()

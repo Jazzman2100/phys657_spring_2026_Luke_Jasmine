@@ -1,8 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+#This python file is just used to make the data and plot it out at different N values.
+
 #Making the N variable to be assigned. Make it 10, 100, 1000
-Number = 1000
+Number = 100
 
 #Making the noise for a gaussian range for ten data points
 noise = np.random.normal(0,0.3,Number)
